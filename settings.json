@@ -1,0 +1,90 @@
+{
+  // general
+  "window.zoomLevel": 0,
+  "editor.minimap.enabled": true,
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.visible": false,
+  "window.menuBarVisibility": "toggle",
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+
+  // workbench
+  "workbench.settings.editor": "json",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.colorCustomizations": {
+    "editor.background": "#121212",
+    "tab.activeBackground": "#121212",
+    "editor.lineHighlightBackground": "#101000",
+    "sideBar.background": "#1c1c1c",
+    "editorRuler.foreground": "#000000",
+    "statusBar.background": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    "statusBar.debuggingBackground": "#000000",
+    "editor.selectionBackground": "#222222"
+  },
+  "workbench.colorTheme": "Atom One Dark",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.occurrencesHighlight": false,
+
+  // screencast
+  "screencastMode.fontSize": 25,
+  "screencastMode.verticalOffset": 3,
+
+  // editor
+  "editor.lineNumbers": "relative",
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
+  "editor.scrollbar.verticalScrollbarSize": 0,
+  "editor.scrollbar.horizontalScrollbarSize": 0,
+  "editor.rulers": [80],
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wordWrapColumn": 80,
+  "debug.javascript.autoExpandGetters": true,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "eslint.codeActionsOnSave.mode": "problems",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+
+  // vim configure
+  "vim.easymotion": true,
+  "vim.statusBarColorControl": true,
+  "vim.cursorStylePerMode.visual": "underline",
+  "vim.cursorStylePerMode.visualblock": "underline",
+  "vim.cursorStylePerMode.visualline": "underline",
+  "vim.cursorStylePerMode.replace": "underline-thin",
+  "vim.statusBarColors.commandlineinprogress": "#000000",
+  "vim.statusBarColors.normal": "#000000",
+  "vim.statusBarColors.searchinprogressmode": "#000000",
+  "vim.statusBarColors.insert": "#0F5A23",
+  "vim.statusBarColors.visualblock": "#393506",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<C-t>"],
+      "commands": [":tabnew"]
+    },
+    {
+      "before": ["<C-q>"],
+      "commands": [":q!"]
+    }
+  ],
+
+  // React Configure
+  "editor.formatOnSave": true,
+  "javascript.format.enable": false,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  }
+}
