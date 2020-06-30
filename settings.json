@@ -11,6 +11,7 @@
   "workbench.settings.editor": "json",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.list.automaticKeyboardNavigation": false,
   "workbench.colorCustomizations": {
     "editor.background": "#121212",
     "tab.activeBackground": "#121212",
@@ -27,7 +28,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.startupEditor": "newUntitledFile",
-  "editor.occurrencesHighlight": false,
+  "git.enabled": false,
 
   // screencast
   "screencastMode.fontSize": 25,
@@ -44,6 +45,7 @@
   "editor.wordWrapColumn": 80,
   "debug.javascript.autoExpandGetters": true,
   "editor.detectIndentation": false,
+  "editor.occurrencesHighlight": false,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "eslint.codeActionsOnSave.mode": "problems",
@@ -62,8 +64,8 @@
   "vim.statusBarColors.commandlineinprogress": "#000000",
   "vim.statusBarColors.normal": "#000000",
   "vim.statusBarColors.searchinprogressmode": "#000000",
-  "vim.statusBarColors.insert": "#0F5A23",
-  "vim.statusBarColors.visualblock": "#393506",
+  "vim.statusBarColors.insert": "#001845",
+  "vim.statusBarColors.visualblock": "#5f00af",
   "vim.normalModeKeyBindings": [
     {
       "before": ["<leader>", "e"],
