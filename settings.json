@@ -1,11 +1,14 @@
 {
   // general
   "window.zoomLevel": 0,
-  "editor.minimap.enabled": true,
+  "editor.minimap.enabled": false,
   "breadcrumbs.enabled": false,
   "workbench.activityBar.visible": false,
-  "window.menuBarVisibility": "toggle",
+  "window.menuBarVisibility": "hidden",
   "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
 
   // workbench
   "workbench.settings.editor": "json",
@@ -21,9 +24,15 @@
     "statusBar.background": "#000000",
     "statusBar.noFolderBackground": "#000000",
     "statusBar.debuggingBackground": "#000000",
-    "editor.selectionBackground": "#222222"
+    "editor.selectionBackground": "#13aabe1e",
+    "editor.wordHighlightBackground": "#1e3f5eb6",
+    "editorLineNumber.foreground": "#444444",
+    "editorError.foreground": "#121212",
+    "editorWarning.foreground": "#121212",
+    "editorInfo.foreground": "#121212",
+    "editorCursor.foreground": "#00ffff",
+    "terminalCursor.foreground": "#00ff7f"
   },
-  "workbench.colorTheme": "Atom One Dark",
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -35,6 +44,7 @@
   "screencastMode.verticalOffset": 3,
 
   // editor
+  "workbench.colorTheme": "Default Dark+",
   "editor.lineNumbers": "relative",
   "editor.fontSize": 17,
   "editor.fontLigatures": true,
@@ -45,7 +55,7 @@
   "editor.wordWrapColumn": 80,
   "debug.javascript.autoExpandGetters": true,
   "editor.detectIndentation": false,
-  "editor.occurrencesHighlight": false,
+  "editor.occurrencesHighlight": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "none",
   "eslint.codeActionsOnSave.mode": "problems",
@@ -64,8 +74,10 @@
   "vim.statusBarColors.commandlineinprogress": "#000000",
   "vim.statusBarColors.normal": "#000000",
   "vim.statusBarColors.searchinprogressmode": "#000000",
-  "vim.statusBarColors.insert": "#001845",
-  "vim.statusBarColors.visualblock": "#5f00af",
+  "vim.statusBarColors.insert": "#0000ff",
+  "vim.statusBarColors.visualblock": "#000000",
+  "vim.statusBarColors.visualline": "#000000",
+  "vim.statusBarColors.visual": "#000000",
   "vim.normalModeKeyBindings": [
     {
       "before": ["<leader>", "e"],
@@ -78,12 +90,23 @@
     {
       "before": ["<C-q>"],
       "commands": [":q!"]
+    },
+    {
+      "before": ["<C-s>"],
+      "commands": [":update<CR>"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-s"],
+      "commands": ["<C-O>:update<CR><ESC>"]
     }
   ],
 
   // React Configure
   "editor.formatOnSave": true,
   "javascript.format.enable": false,
+  "eslint.enable": false,
   "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "files.associations": {

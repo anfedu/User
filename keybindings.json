@@ -1,25 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
 [
-  {
-    "key": "shift+j",
-    "command": "extension.vim_ctrl+pagedown",
-    "when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+pagedown",
-    "command": "-extension.vim_ctrl+pagedown",
-    "when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
-  },
-  {
-    "key": "shift+k",
-    "command": "extension.vim_ctrl+pageup",
-    "when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
-  },
-  {
-    "key": "ctrl+pageup",
-    "command": "-extension.vim_ctrl+pageup",
-    "when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
-  },
   {
     "key": "alt+a",
     "command": "explorer.newFile"
