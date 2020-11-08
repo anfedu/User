@@ -1,11 +1,11 @@
 {
   // general
   "window.zoomLevel": 0,
-  "editor.minimap.enabled": false,
-  "breadcrumbs.enabled": false,
-  "workbench.activityBar.visible": false,
+  "editor.minimap.enabled": true,
+  "breadcrumbs.enabled": true,
+  "workbench.activityBar.visible": true,
   "window.menuBarVisibility": "hidden",
-  "terminal.integrated.shell.linux": "/usr/bin/zsh",
+  "terminal.integrated.shell.linux": "/usr/bin/bash",
   "terminal.integrated.cursorBlinking": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
@@ -37,7 +37,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.startupEditor": "newUntitledFile",
-  "git.enabled": false,
 
   // screencast
   "screencastMode.fontSize": 25,
@@ -106,6 +105,9 @@
   // React Configure
   "editor.formatOnSave": true,
   "javascript.format.enable": false,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "eslint.enable": false,
   "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
