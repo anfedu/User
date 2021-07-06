@@ -1,14 +1,12 @@
 {
   // general
   "window.zoomLevel": 0,
-  "editor.minimap.enabled": true,
-  "breadcrumbs.enabled": true,
-  "workbench.activityBar.visible": true,
+  "breadcrumbs.enabled": false,
+  "workbench.activityBar.visible": false,
   "window.menuBarVisibility": "hidden",
-  "terminal.integrated.shell.linux": "/usr/bin/bash",
+  "terminal.integrated.shell.linux": "/usr/bin/zsh",
   "terminal.integrated.cursorBlinking": true,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
+  "terminal.integrated.fontFamily": "FiraMono Nerd Font",
 
   // workbench
   "workbench.settings.editor": "json",
@@ -44,14 +42,16 @@
 
   // editor
   "workbench.colorTheme": "Default Dark+",
+  "editor.minimap.enabled": true,
   "editor.lineNumbers": "relative",
+  "editor.fontFamily": "Fira Code",
   "editor.fontSize": 17,
   "editor.fontLigatures": true,
   "editor.scrollbar.verticalScrollbarSize": 0,
   "editor.scrollbar.horizontalScrollbarSize": 0,
   "editor.rulers": [80],
-  "editor.wordWrap": "wordWrapColumn",
-  "editor.wordWrapColumn": 80,
+  // "editor.wordWrap": "wordWrapColumn",
+  // "editor.wordWrapColumn": 80,
   "debug.javascript.autoExpandGetters": true,
   "editor.detectIndentation": false,
   "editor.occurrencesHighlight": true,
@@ -95,12 +95,6 @@
       "commands": [":update<CR>"]
     }
   ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["<C-s"],
-      "commands": ["<C-O>:update<CR><ESC>"]
-    }
-  ],
 
   // React Configure
   "editor.formatOnSave": true,
@@ -112,6 +106,8 @@
   "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "files.associations": {
-    "*.js": "javascriptreact"
-  }
+    "*.js": "javascriptreact",
+    "*.ts": "javascriptreact"
+  },
+  "git.enableSmartCommit": true
 }
